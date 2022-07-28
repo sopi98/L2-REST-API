@@ -23,7 +23,9 @@ res.json({message:'Hello World!!!'})
 
 /*get method to handle GET request. ‘/’ is the requested endpoint. It’s the value that comes after your domain name.*/
 
-
+app.get('/:id', function(req, res){
+    res.send('GoodBye ' + req.params.id);
+});
 app.use('/api',router);
 
 app.listen(port); // create a server that browsers can connect to
