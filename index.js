@@ -14,18 +14,19 @@ var port = process.env.PORT || 8081 //set our port
 var router = express.Router() 
 
 router.get('/', (req,res)=>{
-res.json({message:'Hula! my API works<3!!!'})
-}) ;
+res.json({message:'Hula! my API works<3!!!'}) }) ;
 
 router.get('/hello', (req,res)=>{
-res.json({message:'Hello World!!!'})
-}) ;
+res.json({message:'Hello World!!!'}) }) ;
 
 /*get method to handle GET request. ‘/’ is the requested endpoint. It’s the value that comes after your domain name.*/
 
-app.get('/:name', (req, res)=>{
-    res.send('GoodBye ' + req.params.name);
-});
+app.get('/things/:name', (req, res)=>{
+    res.send('GoodBye ' + req.params.name);} );
+
+router.post('/number', (req, res)=>{
+res.send("The number is "+req.body.num); } );
+
 app.use('/api',router);
 
 app.listen(port); // create a server that browsers can connect to
