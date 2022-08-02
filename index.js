@@ -16,7 +16,7 @@ var router = express.Router()
 router.get('/', (req,res)=>{
 res.json({message:'Hula! my API works!!'}) }) ;
 
-/*router.get('/hello', (req,res)=>{
+router.get('/hello', (req,res)=>{
 res.json({message:'Hello World!'}) }) ;
 
 /*get method to handle GET request. ‘/’ is the requested endpoint. It’s the value that comes after your domain name.*/
