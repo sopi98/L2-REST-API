@@ -26,7 +26,7 @@ router.get('/goodbye/:name', (req, res)=>{
 
 router.post('/sum', (req, res)=>{
 	var sum = req.body.num1 + req.body.num2
-res.json({message:"The sum is :"+sum}); })
+res.json({message:'The sum is :' + sum}); });
 
 app.use('/api',router);
 
