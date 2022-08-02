@@ -24,9 +24,9 @@ res.json({message:'Hello World!'}) }) ;
 router.get('/goodbye/:name', (req, res)=>{
     res.json({message:'GoodBye ' + req.params.name});} );
 
-router.post('/sum', (req, res)=>{
+/*router.post('/sum', (req, res)=>{
 	var sum = req.body.num1 + req.body.num2
-res.send({"The number is :"+sum}); } );
+res.send({"The number is :"+sum}); } );*/
 
 app.use('/api',router);
 
