@@ -22,11 +22,11 @@ res.json({message:'Hello World!'}) }) ;
 //get method to handle GET request. ‘/’ is the requested endpoint. It’s the value that comes after your domain name.*/
 
 router.get('/goodbye/:name', (req, res)=>{
-    res.json({message:'GoodBye ' + req.params.name});} );
+    res.json({message:'GoodBye ' + req.params.name}) })
 
 router.post('/sum', (req, res)=>{
 	var sum = req.body.num1 + req.body.num2
-res.json({message:'The sum is :' + sum}); });
+res.json({message:'The sum is :' + sum}); })
 
 app.use('/api',router);
 
