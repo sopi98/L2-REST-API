@@ -19,12 +19,12 @@ res.json({message:'Hula! my API works!!'}) }) ;
 router.get('/hello', (req,res)=>{
 res.json({message:'Hello World!'}) }) ;
 
-/*get method to handle GET request. ‘/’ is the requested endpoint. It’s the value that comes after your domain name.*/
+//get method to handle GET request. ‘/’ is the requested endpoint. It’s the value that comes after your domain name.*/
 
-/*router.get('/goodbye/:name', (req, res)=>{
+router.get('/goodbye/:name', (req, res)=>{
     res.json({message:'GoodBye ' + req.params.name});} );
 
-router.post('/sum', (req, res)=>{
+/*router.post('/sum', (req, res)=>{
 	var sum = req.body.num1 + req.body.num2
 res.send({"The number is :"+sum}); } );*/
 
